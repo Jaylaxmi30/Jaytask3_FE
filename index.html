@@ -1,0 +1,804 @@
+﻿<html>
+<head>
+
+    <link href="css/all.min.css">
+    <title> prac web page </title>
+    <style>
+
+        #h {
+            width: 100%;
+            height: 180px;
+            position: relative;
+        }
+
+        img {
+            margin-left: 200px;
+            margin-top: 10px;
+            display: inline-block;
+            border:2px solid;
+            border-radius:80px;
+        }
+
+        img:hover{
+            transform:scale(0.9);
+            transition-duration:5s;
+        }
+
+        #h .search-container {
+            float:right;
+        }
+
+            #h .search-container input[type=text] {
+                font-size: 20px;
+                padding: 6px;
+                margin-top: 70px;
+                border-radius: 6px;
+            }
+            #h .search-container button {
+                font-size: 25px;
+                margin-top: 60px;
+                margin-right: 70px;
+                padding-bottom: 5px;
+                border-radius: 6px;
+            }
+            #h .search-container button:hover {
+                opacity:0.5;
+            }
+
+        #h .p1 {
+            display: inline-block;
+            position: absolute;
+            margin-left: 815px;
+            margin-top: 70px;
+            border:2px solid;
+            border-radius:50%;
+            padding:5px;
+        }
+        #h .p2 {
+            display: inline-block;
+            position: absolute;
+            margin-left: 850px;
+            margin-top: 70px;
+        }
+        #h .p3 {
+            display: inline-block;
+            position: absolute;
+            margin-left: 850px;
+            margin-top:90px;
+        }
+
+        #nav {
+            width: 100%;
+            height: 100px;
+            background-color: #43C6DB;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+            #nav .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            #nav .dropbtn {
+                display: inline-block;
+                text-align: center;
+                border: 1px solid #008B8B;
+                border-radius: 20px;
+                background-color: #43C6DB;
+                box-shadow: 2px 2px 2px #008B8B;
+                color: #045F5F;
+                padding: 8px;
+                margin-left: 20px;
+                margin-top: 35px;
+                text-decoration: none;
+            }
+
+                #nav .dropbtn:first-child {
+                    margin-left: 100px;
+                }
+
+            #nav .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #77BFC7;
+                color: white;
+                min-width: 100px;
+                box-shadow: 4px 4px 2px black;
+                z-index: 1;
+                text-decoration: none;
+            }
+
+                #nav .dropdown-content a {
+                    color: black;
+                    padding: 6px 10px;
+                    text-decoration: none;
+                    display: block;
+                    border: 1px solid #5F9EA0;
+                    border-radius: 10px;
+                }
+
+                        #nav .dropdown-content a:hover {
+                            background-color: #5F9EA0;
+                            color:white;
+                        }
+
+                    #nav .dropdown:hover .dropdown-content {
+                        display: block;
+                    }
+
+            #nav .dropdown:hover .dropbtn {
+                background-color: #5F9EA0;
+                color:white;
+            }
+
+
+            #nav .button {
+                margin-right: 30px;
+                margin-top: -35px;
+                width: 200px;
+                float: right;
+                padding: 10px;
+                background-color: #E0FFFF;
+                border: 2px solid;
+                border-radius: 15px;
+                display: inline-block;
+                box-shadow: 2px 2px 2px black;
+            }
+
+            #nav .button:first-child {
+                margin-right:250px;
+            }
+             #nav .button:hover {
+                background-color: #045F5F;
+                color: white;
+                padding: 10px;
+                width: 200px;
+                border: 2px solid black;
+                border-radius: 15px;
+                box-shadow: 2px 2px 2px black;
+             }
+
+                #img {
+                    width: 100%;
+                    height: 800px;
+                    background-image: url("N1.jpg");
+                    background-size: 100% 800px;
+                    background-repeat: no-repeat;
+                    position: relative;
+                    z-index: -1;
+                }
+
+                #img .border{
+                    width:500px;
+                    height:710px;
+                    border:5px solid black;
+                    color:white;
+                    position:absolute;
+                    margin-left:80px;
+                    bottom:50px;
+                    padding:5px;
+                    z-index:3;
+                }
+
+            #img .bottom-right {
+                position:absolute;
+                bottom:300px;
+
+                right:100px;
+                text-shadow:2px 2px 5px white;
+                color:white;
+            }
+            #img .bottom-right1 {
+                position: absolute;
+                bottom: 250px;
+                right: 90px;
+                font-size: 20px;
+                color: white;
+            }
+            #img .bottom-right2 {
+                position: absolute;
+                bottom: 200px;
+                right: 300px;
+                padding:10px;
+                width:100px;
+                box-shadow:2px 2px 2px white;
+                background-color: white;
+                border:2px solid black;
+                border-radius:10px;
+            }
+
+        #form {
+            width: 90%;
+            height: 100px;
+            border: 3px solid black;
+            background-color: #F0FFFF;
+            margin-left: 100px;
+            margin-top: -30px;
+            z-index: 2;
+            display: inline-block;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+
+            #form .lable1 {
+                font-size: 20px;
+                margin-top: 30px;
+                padding-bottom: -30px;
+                padding-left: 100px;
+            }
+            #form .lable2 {
+                font-size: 20px;
+                margin-top: 30px;
+                padding-bottom: -30px;
+                padding-left: 100px;
+            }
+            #form .lable3 {
+                font-size: 20px;
+                margin-top: 30px;
+                padding-bottom: -30px;
+                padding-left: 110px;
+            }
+            #form .lable4 {
+                font-size: 20px;
+                margin-top: 30px;
+                padding-bottom: -30px;
+                padding-left: 170px;
+            }
+            #form .lable5 {
+                font-size: 20px;
+                margin-top: 30px;
+                padding-bottom: -30px;
+                padding-left: 220px;
+            }
+            #form .lable6 {
+                font-size: 20px;
+                margin-top: 30px;
+                padding-bottom: -30px;
+                padding-left: 70px;
+            }
+
+            #form .select7 {
+                margin-top: -45px;
+                margin-left: 1500px;
+                background-color: #C9C0BB;
+                padding: 7px;
+                box-shadow: 2px 2px 2px black;
+                border: 2px solid black;
+                border-radius: 4px;
+                width: 150px;
+                font-size: 20px;
+            }
+
+                #form .select1{
+                    font-size: 20px;
+                    margin-top: 30px;
+                    margin-left: 100px;
+                    box-shadow: 2px 2px 2px black;
+                    border: 2px solid black;
+                    border-radius: 4px;
+                    width:100px;
+                }
+
+                #form .select2{
+                    font-size: 20px;
+                    margin-top: 30px;
+                    margin-left: 58px;
+                    box-shadow: 2px 2px 2px black;
+                    border: 2px solid black;
+                    border-radius: 4px;
+                    width:100px;
+                }
+                #form .select3{
+                    font-size: 20px;
+                    margin-top: 30px;
+                    margin-left: 70px;
+                    box-shadow: 2px 2px 2px black;
+                    border: 2px solid black;
+                    border-radius: 4px;
+                    width:150px;
+                }
+                #form .select4{
+                    font-size: 20px;
+                    margin-top: 30px;
+                    margin-left: 70px;
+                    border: 2px solid black;
+                    box-shadow: 2px 2px 2px black;
+                    border-radius: 4px;
+                    width:200px;
+                }
+                #form .select5{
+                    font-size: 20px;
+                    margin-top: 30px;
+                    margin-left: 70px;
+                    border: 2px solid black;
+                    box-shadow: 2px 2px 2px black;
+                    border-radius: 4px;
+                    width:100px;
+                }
+                #form .select6{
+                    font-size: 20px;
+                    margin-top: 30px;
+                    margin-left: 78px;
+                    border: 2px solid black;
+                    box-shadow: 2px 2px 2px black;
+                    border-radius: 4px;
+                    width:100px;
+                }
+
+        #con {
+            width: 100%;
+            height: 500px;
+            z-index: 1;
+            margin-top: -50px;
+        }
+
+            #con .column1 {
+                column-count: 3;
+                margin-top: 100px;
+                margin-left: 250px;
+                border: 2px solid black;
+                border-radius: 1px;
+                box-shadow: 5px 5px 5px black;
+            }
+                #con .column1:hover {
+                    transform: scale(1.1);
+                    transition-duration: 1s;
+                    -webkit-mask-image: linear-gradient(black, transparent);
+                    mask-image: linear-gradient(black, transparent);
+                }
+
+            #con .column2 {
+                column-count: 3;
+                margin-top: 100px;
+                border: 2px solid black;
+                border-radius: 1px;
+                box-shadow: 5px 5px 5px black;
+            }
+                #con .column2:hover {
+                    transform: scale(1.1);
+                    transition-duration: 1s;
+                    -webkit-mask-image: linear-gradient(black, transparent);
+                    mask-image: linear-gradient(black, transparent);
+                }
+
+            #con .column3 {
+                column-count: 3;
+                margin-top: 100px;
+                border: 2px solid black;
+                border-radius: 1px;
+                box-shadow: 5px 5px 5px black;
+            }
+                #con .column3:hover {
+                    transform: scale(1.1);
+                    transition-duration: 1s;
+                    -webkit-mask-image: linear-gradient(black, transparent);
+                    mask-image: linear-gradient(black, transparent);
+                }
+
+            #con .text1 {
+                float: left;
+                margin-left: 250px;
+                display: inline-block;
+                background-color: #DADBDD;
+                border: 2px solid #6D6968;
+                border-radius: 5px;
+                padding:5px;
+                margin-top:10px;
+            }
+            #con .text1:hover{
+                    box-shadow: 4px 4px 6px black;
+            }
+            #con .text2 {
+                float: left;
+                margin-left: 200px;
+                display: inline-block;
+                background-color: #DADBDD;
+                border: 2px solid #6D6968;
+                border-radius: 5px;
+                padding: 5px;
+                margin-top: 10px;
+            }
+            #con .text2:hover{
+                    box-shadow: 4px 4px 6px black;
+            }
+
+            #con .text3 {
+                float: left;
+                margin-left: 200px;
+                display: inline-block;
+                background-color: #DADBDD;
+                border: 2px solid #6D6968;
+                border-radius: 5px;
+                padding: 5px;
+                margin-top: 10px;
+            }
+            #con .text3:hover{
+                    box-shadow: 4px 4px 6px black;
+            }
+
+            #con .button1 {
+                float: right;
+                margin-left: 200px;
+                margin-top: -25px;
+                margin-bottom:5px;
+                margin-right:3px;
+                padding: 5px;
+                border: 2px solid black;
+                border-radius: 2px;
+                width:100px;
+                font-size:15px;
+            }
+                #con .button1:hover {
+                    background-color: #C9C0BB;
+                    box-shadow: 2px 2px 2px black;
+                }
+
+                #con .button2 {
+                    float: right;
+                    margin-left: 190px;
+                    margin-top: -25px;
+                    padding: 5px;
+                    margin-bottom:5px;
+                    margin-right:2px;
+                    border: 2px solid black;
+                    border-radius: 2px;
+                    width: 100px;
+                    font-size: 15px;
+                }
+            #con .button2:hover {
+                background-color: #C9C0BB;
+                    box-shadow: 2px 2px 2px black;
+            }
+
+            #con .button3 {
+                float: right;
+                margin-left: 190px;
+                margin-top: -25px;
+                padding: 5px;
+                border: 2px solid black;
+                border-radius: 2px;
+                margin-bottom:5px;
+                margin-right:4px;
+                width: 100px;
+                font-size: 15px;
+            }
+            #con .button3:hover {
+                background-color: #C9C0BB;
+                    box-shadow: 2px 2px 2px black;
+            }
+
+        #container {
+            width: 100%;
+            height: 400px;
+            margin-top: -30px;
+        }
+
+            #container .column1 {
+                column-count: 2;
+                margin-top: 30px;
+                margin-left: 300px;
+                border: 2px solid black;
+                border-radius: 1px;
+                box-shadow:5px 5px 5px black;
+
+            }
+
+            #container .column1:hover {
+                transform: scale(1.1);
+                transition-duration: 1s;
+            }
+
+            #container .column2 {
+                column-count: 2;
+                margin-top: 30px;
+                border: 2px solid black;
+                border-radius: 1px;
+                box-shadow: 5px 5px 5px black;
+            }
+
+                #container .column2:hover {
+                    transform: scale(1.1);
+                    transition-duration: 1s;
+                }
+
+            #container h2 {
+                background-color: #E5E4E2;
+                border: 2px solid #DCDCDC;
+                border-radius: 4px;
+                padding: 10px;
+            }
+
+        #footer {
+            width: 100%;
+            height: 220px;
+            background-color: #DCDCDC;
+            margin-top: 30px;
+            display: inline-block;
+        }
+
+            #footer .column1 {
+                column-count: 4;
+                margin-top: 30px;
+                margin-left: 200px;
+                column-width:100px;
+                display:inline-block;
+            }
+
+            #footer .column2 {
+                column-count: 4;
+                margin-top: -1100px;
+                margin-left: -200px;
+                column-width: 100px;
+                display: inline-block;
+            }
+
+            #footer .column3 {
+                column-count: 4;
+                margin-top: -140px;
+                margin-left: 1000px;
+                column-width: 100px;
+                display: inline-block;
+            }
+            #footer .column31 {
+                column-count: 4;
+                margin-top: -110px;
+                margin-left: 1000px;
+                display: inline-block;
+            }
+            #footer .column32 {
+                column-count: 4;
+                margin-top: -100px;
+                margin-left: 1100px;
+                display: inline-block;
+            }
+            #footer .column33 {
+                column-count: 4;
+                margin-top: -140px;
+                display: inline-block;
+            }
+            #footer .column34 {
+                column-count: 4;
+                margin-top: -140px;
+                display: inline-block;
+            }
+            #footer .column35 {
+                column-count: 4;
+                margin-top: -140px;
+                display: inline-block;
+            }
+
+            #footer .column4 {
+                column-count: 4;
+                margin-top: -150px;
+                margin-left: 1200px;
+                column-width: 300px;
+                display: inline-block;
+            }
+
+            #footer .column5 {
+                margin-top: 10px;
+                margin-left: 1px;
+                display: inline-block;
+            }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="h">
+        <img src="tlogo1.jpg" alt="logo" width="150px" height="150px">
+        <p class="p1"><i class="fas fa-phone"></i></p>
+        <p class="p2">Call 24/7 Support</p>
+        <p class="p3">+91(44)12344567</p>
+        <div class="search-container">
+            <form>
+                <input type="text" placeholder="Search..." name="search">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div id="nav">
+        <div class="dropdown">
+            <button class="dropbtn">Hotels</button>
+            <div class="dropdown-content">
+                <a href="#">⭐ 5 star</a>
+                <a href="#">⭐ 3 star</a>
+                <a href="#">⭐ 2 star</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Flights</button>
+                <div class="dropdown-content">
+                    <a href="#">IndiGo</a>
+                    <a href="#">Air India</a>
+                    <a href="#">Qatar Airways</a>
+                </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Vacation</button>
+            <div class="dropdown-content">
+                <a href="#">Beach</a>
+                <a href="#">Mountain trekking</a>
+                <a href="#">Ship</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Hot Deals</button>
+            <div class="dropdown-content">
+                <a href="#">20% off</a>
+                <a href="#">30% off</a>
+                <a href="#">50% off</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Travel Guide</button>
+            <div class="dropdown-content">
+                <a href="#">Jay</a>
+                <a href="#">Rose</a>
+                <a href="#">Jaan</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Blogs</button>
+            <div class="dropdown-content">
+                <a href="#">Trekking Blogs</a>
+                <a href="#">Paris trip</a>
+                <a href="#">Geen land trips</a>
+            </div>
+        </div>
+
+            <div>
+                <button class="button" title="If you dont have an account, then sign in">Sign Up</button>
+                <button class="button" title="If you already have an account please countinue">My Account</button>
+            </div>
+
+        </div>
+
+        <div id="img">
+            <div class="border">
+                <h2><u>NOTE:</u></h2>
+                <p>Every traveler tries to get the best experience out of their budget. So, you can advise readers to smartly and strategically distribute their resources.</p><br>
+                <p>Here you can share some expert tips on finding cheap flights like Google Flights or Skyscanner. Another is to look for flight deals on 
+                websites - Scott’s Cheap Flights or The Flight Deal and sign up for airline newsletters, as they sometimes offer exclusive discounts to their subscribers.</p><br>
+                <p>Regarding packing for a trip, there are a few things to keep in mind. First, think about what you need and make a list. It will help you stay organized
+                and avoid packing too much or forgetting something important.</p><br>
+                <p>No matter how long your bus ride or the travel is, there are a few things you can do to prepare for it - Bring along a book or magazine to read or download
+                some movies or TV shows onto your laptop or tablet. If you get motion sickness, it might be helpful to bring along something like ginger candy or wristbands that help with nausea.</p><br>
+                <p>Solo travel has become increasingly popular recently as more people choose to explore the world alone. There are many reasons why people choose to travel solo, including the opportunity
+                to learn more about themselves, meet new people, and experience different cultures.</p><br>
+                <p>Looking for a pet-friendly place while traveling can be challenging. But with research, you can find plenty of options that will welcome your furry friend.</p><br>
+            </div>
+            <div class="bottom-right"><h1>WELCOME TO YOUR VACATION </h1></div>
+            <div class="bottom-right1">
+                <p>
+                    Enjoy beauty of the world we offer Budget Friendly quality
+                    family holidays.
+                </p>
+            </div>
+
+            <button class="bottom-right2">Book Now</button>
+
+
+        </div>
+
+        <form id="form">
+
+            <lable class="lable1" for="what">What?</lable>
+            <lable class="lable2" for="where">Where?</lable>
+            <lable class="lable3" for="when">When?</lable>
+            <lable class="lable4" for="who">Who?</lable>
+            <lable class="lable5" for="adult">No.of adults?</lable>
+            <lable class="lable6" for="child">No.of childrens?</lable><br>
+
+            <select class="select1" id="what" name="what">
+                <option>Bus</option>
+                <option>Van</option>
+                <option>Train</option>
+                <option>Flight</option>
+                <option>Ship</option>
+            </select>
+
+
+            <select class="select2" id="where" name="where">
+                <option>India</option>
+                <option>Turkey</option>
+                <option>America</option>
+                <option>Canada</option>
+                <option>London</option>
+            </select>
+
+            <input class="select3" type="date" id="when" name="when">
+
+            <input class="select4" type="text" id="who" name="who" placeholder="Enter your name..">
+
+            <select class="select5" id="adut" name="adut">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <select class="select6" id="child" name="child">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <input class="select7" type="submit" id="submit" name="submit" value="submit">
+
+
+        </form>
+
+        <div id="con">
+            <div>
+                <img class="column1" src="H4.jpg" alt="hotel" width="300px" height="200px">
+                <img class="column2" src="H3.jpg" alt="hotel" width="300px" height="200px">
+                <img class="column3" src="h1.jpg" alt="hotel" width="300px" height="200px">
+
+            </div>
+
+            <div class="text1">
+                <h3> HILTON PETALING </h3>
+                <p><strong>Dubai</strong></p>
+                <button class="button1"><strong>Search</strong></button>
+            </div>
+            <div class="text2">
+                <h3> AVANTE HOTEL </h3>
+                <p><strong>Turkey</strong></p>
+                <button class="button2"><strong>Search</strong></button>
+            </div>
+            <div class="text3">
+                <h3> LE MERIDIEN RETALING </h3>
+                <p><strong>Paris, France</strong></p>
+                <button class="button3"><strong>Search</strong></button>
+            </div>
+
+
+        </div>
+
+        <div id="container">
+            <div>
+                <h2>Hot Deals</h2>
+                <img class="column1" src="b4.jpg" alt="hotel" width="500px" height="250px">
+                <img class="column2" src="b3.jpg" alt="hotel" width="500px" height="250px">
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="column1">
+                <h3 style="display:inline-block">Companies</h3><br>
+                <ul style="display:inline-block">
+                    <li>About the company</li>
+                    <li>Terms and Conditions</li>
+                    <li>Private Policy</li>
+                    <li>Career</li>
+                    <li>Address</li>
+                </ul>
+            </div>
+
+            <div class="column2">
+                <h3 style="display:inline-block">Companies</h3><br>
+                <ul style="display:inline-block">
+                    <li>Contact</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+
+            <div class="column4">
+                <h3 style="display:inline-block">Don't miss our deals and offers</h3><br>
+                <form class="column5">
+                    <input style="display:inline-block" type="text" placeholder="Search..." name="search">
+                    <button style="display:inline-block"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <script src="js/all.min.js"></script>
+</body>
+</html>
+
